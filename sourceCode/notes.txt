@@ -1,0 +1,25 @@
+DisFront: 000
+DisSide: 000
+GarageDoorClose / Open
+SysStatus:On / Off
+
+  // Set the Builtin LED to On or OFf based on the reed sensor.
+  if (reedActive == 1) {
+    digitalWrite(LED_BUILTIN, LOW);
+  } else {
+    digitalWrite(LED_BUILTIN, HIGH);
+  }
+
+
+
+  //Print to Serial Monitor
+  //Serial.print("DistanceF: ");
+  //Serial.println(distanceF);
+  //Serial.print("DistanceS: ");
+  //Serial.println(distanceS);
+  //Serial.println(reedActive);
+
+//Ultrasonic Sensor Values for Front of Car
+const int red = 10;
+const int yellow = 20;
+const int green = 30;
